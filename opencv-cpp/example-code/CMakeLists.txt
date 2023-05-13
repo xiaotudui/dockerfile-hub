@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( OpenCVTest )
+# set(OpenCV_DIR /usr/local/lib/cmake/opencv4)
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( OpenCVTest main.cpp )
+target_link_libraries( OpenCVTest ${OpenCV_LIBS} )
