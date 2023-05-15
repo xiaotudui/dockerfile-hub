@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 RUN apt-get update && apt install -y build-essential gdb cmake unzip
-COPY ./opencv-4.7.0/opencv-4.7.0.zip /opt
+COPY ../lib/opencv-4.7.0.zip /opt
 WORKDIR /opt
 RUN unzip opencv-4.7.0.zip
 WORKDIR /opt/opencv-4.7.0/build
